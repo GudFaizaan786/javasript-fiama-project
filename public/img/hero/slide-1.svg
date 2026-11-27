@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 620" width="1440" height="620">
+  <defs>
+    <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F3EBE7"/>
+      <stop offset="100%" stop-color="#ECE1DC"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="620" fill="url(#hg)"/>
+  <g transform="translate(1030,360)">
+    <path d="M-85,260 Q-70,70 -120,-90 M0,260 Q10,50 0,-155 M85,260 Q72,80 115,-65" fill="none" stroke="#4D7838" stroke-width="14" stroke-linecap="round"/>
+    <path d="M-65,260 Q-170,120 -180,-30 Q-105,60 -55,260 Z" fill="#54823E"/>
+    <path d="M60,260 Q175,110 190,-10 Q115,85 50,260 Z" fill="#467032"/>
+    <path d="M-10,260 Q-35,80 -65,-10 Q-5,90 10,260 Z" fill="#5D8D45"/>
+    
+      <g transform="translate(-125,-120) scale(1.05)">
+        <path d="M-44,-36 Q-48,48 0,54 Q48,48 44,-36 Q18,-8 0,-56 Q-18,-8 -44,-36 Z" fill="#E94225"/>
+        <path d="M-24,-48 Q0,-74 24,-48 Q16,28 0,46 Q-16,28 -24,-48 Z" fill="#FF7F3F" opacity="0.7"/>
+      </g>
+    
+      <g transform="translate(0,-195) scale(1.2)">
+        <path d="M-44,-36 Q-48,48 0,54 Q48,48 44,-36 Q18,-8 0,-56 Q-18,-8 -44,-36 Z" fill="#E94225"/>
+        <path d="M-24,-48 Q0,-74 24,-48 Q16,28 0,46 Q-16,28 -24,-48 Z" fill="#FF7F3F" opacity="0.7"/>
+      </g>
+    
+      <g transform="translate(120,-95) scale(1)">
+        <path d="M-44,-36 Q-48,48 0,54 Q48,48 44,-36 Q18,-8 0,-56 Q-18,-8 -44,-36 Z" fill="#E94225"/>
+        <path d="M-24,-48 Q0,-74 24,-48 Q16,28 0,46 Q-16,28 -24,-48 Z" fill="#FF7F3F" opacity="0.7"/>
+      </g>
+    
+  </g>
+</svg>

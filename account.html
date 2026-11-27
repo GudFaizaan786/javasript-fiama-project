@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account - Fiama</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body data-page="account" class="bg-white text-[#666666] antialiased selection:bg-[#E55472] selection:text-white min-h-screen flex flex-col">
+    <div id="site-header"></div>
+
+    <main class="flex-1">
+      <section class="bg-[#F2F2F2] py-12 md:py-16">
+        <div class="mx-auto max-w-[1170px] px-[15px] text-center">
+          <h1 class="text-[28px] md:text-[34px] font-bold text-[#010101]">My Account</h1>
+          <div class="mt-2 flex items-center justify-center gap-2 text-[13px] font-medium">
+            <a href="/index.html" class="text-[#666666] hover:text-[#E55472] transition-colors">Home</a>
+            <span class="text-[#999999]">&gt;</span>
+            <span class="text-[#010101]">My Account</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-[1170px] px-[15px] py-16 md:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <aside class="lg:col-span-4 border border-[#EDEDED] divide-y divide-[#EDEDED]">
+            <button type="button" data-acc-tab="dashboard" class="flex w-full items-center justify-between px-6 py-4 text-left text-[14px] font-medium bg-[#071C1F] text-white cursor-pointer">
+              <span>Dashboard</span>
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </button>
+            <button type="button" data-acc-tab="orders" class="flex w-full items-center justify-between px-6 py-4 text-left text-[14px] font-medium bg-white text-[#565656] cursor-pointer">
+              <span>Orders</span>
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </button>
+            <button type="button" data-acc-tab="downloads" class="flex w-full items-center justify-between px-6 py-4 text-left text-[14px] font-medium bg-white text-[#565656] cursor-pointer">
+              <span>Downloads</span>
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            </button>
+            <button type="button" data-acc-tab="address" class="flex w-full items-center justify-between px-6 py-4 text-left text-[14px] font-medium bg-white text-[#565656] cursor-pointer">
+              <span>address</span>
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </button>
+            <button type="button" data-acc-tab="details" class="flex w-full items-center justify-between px-6 py-4 text-left text-[14px] font-medium bg-white text-[#565656] cursor-pointer">
+              <span>Account Details</span>
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </button>
+            <button id="acc-logout-btn" type="button" class="flex w-full items-center justify-between bg-white px-6 py-4 text-left text-[14px] font-medium text-[#565656] hover:bg-[#F9F9F9] hover:text-[#E55472] transition-colors cursor-pointer">
+              <span>Logout</span>
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+            </button>
+          </aside>
+
+          <div id="account-content-panel" class="lg:col-span-8"></div>
+        </div>
+      </section>
+    </main>
+
+    <section id="brand-logos"></section>
+    <div id="site-footer"></div>
+    <div id="site-modals"></div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

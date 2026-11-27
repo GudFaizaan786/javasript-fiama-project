@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Left Sidebar - Fiama</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body data-page="shop" class="bg-white text-[#666666] antialiased selection:bg-[#E55472] selection:text-white min-h-screen flex flex-col">
+    <div id="site-header"></div>
+
+    <main class="flex-1">
+      <section class="bg-[#F2F2F2] py-12 md:py-16">
+        <div class="mx-auto max-w-[1170px] px-[15px] text-center">
+          <h1 class="text-[28px] md:text-[34px] font-bold text-[#010101]">Shop Left Sidebar</h1>
+          <div class="mt-2 flex items-center justify-center gap-2 text-[13px] font-medium">
+            <a href="/index.html" class="text-[#666666] hover:text-[#E55472] transition-colors">Home</a>
+            <span class="text-[#999999]">&gt;</span>
+            <span class="text-[#010101]">Shop Left Sidebar</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-[1170px] px-[15px] py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <!-- Left Sidebar -->
+          <aside class="lg:col-span-3 space-y-8">
+            <div class="relative">
+              <input id="shop-search-input" type="text" placeholder="Search your keyword..." class="w-full h-11 border border-[#EDEDED] bg-[#FBFBFB] pl-4 pr-10 text-[13px] text-[#010101] placeholder:text-[#999999] focus:border-[#E55472] focus:bg-white focus:outline-none" />
+              <svg viewBox="0 0 24 24" class="absolute right-3.5 top-3.5 h-4 w-4 text-[#777777]" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </div>
+
+            <div class="border-b border-[#EDEDED] pb-7">
+              <h4 class="text-[15px] font-semibold text-[#010101] pb-2 border-b border-[#EDEDED]">Price</h4>
+              <div class="mt-4 flex items-center justify-between text-[13px]">
+                <span class="text-[#666666]">Your range:</span>
+                <span id="shop-price-label" class="font-semibold text-[#010101] tabular-nums">$10 - $65</span>
+              </div>
+              <input id="shop-price-range" type="range" min="12" max="65" value="65" class="fiama-range mt-4 w-full" />
+            </div>
+
+            <div class="border-b border-[#EDEDED] pb-7">
+              <h4 class="text-[15px] font-semibold text-[#010101] pb-2 border-b border-[#EDEDED]">Categories</h4>
+              <ul id="shop-categories" class="mt-4 space-y-2.5"></ul>
+            </div>
+
+            <div class="border-b border-[#EDEDED] pb-7">
+              <h4 class="text-[15px] font-semibold text-[#010101] pb-2 border-b border-[#EDEDED]">Color</h4>
+              <div id="shop-colors" class="mt-4 flex flex-wrap items-center gap-2.5"></div>
+            </div>
+
+            <div class="border-b border-[#EDEDED] pb-7">
+              <h4 class="text-[15px] font-semibold text-[#010101] pb-2 border-b border-[#EDEDED]">Size</h4>
+              <div id="shop-sizes" class="mt-4 flex flex-wrap items-center gap-4"></div>
+            </div>
+
+            <div>
+              <h4 class="text-[15px] font-semibold text-[#010101] pb-2 border-b border-[#EDEDED]">Tags</h4>
+              <div id="shop-tags" class="mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-[13px] text-[#666666]"></div>
+            </div>
+
+            <button id="shop-reset-btn" type="button" class="hidden w-full border border-[#E55472] py-2 text-[12px] font-semibold uppercase tracking-wider text-[#E55472] hover:bg-[#E55472] hover:text-white transition-colors cursor-pointer">
+              Reset All Filters
+            </button>
+          </aside>
+
+          <!-- Right Content -->
+          <div class="lg:col-span-9">
+            <div class="mb-8 flex flex-wrap items-center justify-between gap-4 border-b border-[#F0F0F0] pb-4">
+              <p id="shop-results-count" class="text-[13px] text-[#666666] tabular-nums">Showing 9 of 10 results</p>
+              <div class="flex items-center gap-3">
+                <select id="shop-sort-select" class="h-10 border border-[#EDEDED] bg-white px-4 text-[13px] text-[#333333] focus:border-[#E55472] focus:outline-none cursor-pointer">
+                  <option value="default">Default sorting</option>
+                  <option value="rating">Sort by popularity</option>
+                  <option value="price-asc">Sort by price: low to high</option>
+                  <option value="price-desc">Sort by price: high to low</option>
+                </select>
+                <button id="shop-view-grid" type="button" aria-label="Grid view" class="flex h-10 w-10 items-center justify-center border border-[#E55472] bg-[#E55472] text-white cursor-pointer">
+                  <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+                </button>
+                <button id="shop-view-list" type="button" aria-label="List view" class="flex h-10 w-10 items-center justify-center border border-[#EDEDED] bg-white text-[#565656] cursor-pointer">
+                  <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div id="shop-products-container" class="grid grid-cols-2 md:grid-cols-3 gap-x-4 sm:gap-x-6 gap-y-8 sm:gap-y-10"></div>
+            <div id="shop-pagination" class="mt-14 flex items-center justify-center gap-2.5"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="brand-logos"></section>
+    <div id="site-footer"></div>
+    <div id="site-modals"></div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

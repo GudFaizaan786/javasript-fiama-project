@@ -1,0 +1,6 @@
+{
+  "name": "Fiama - Flower Shop eCommerce",
+  "description": "Fiama flower shop eCommerce storefront featuring curated bouquets, shop filtering, product details, cart, wishlist, checkout, account management, and contact pages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

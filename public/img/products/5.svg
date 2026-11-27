@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" width="400" height="440">
+  <rect width="400" height="440" fill="#F7F7F7"/>
+  <g transform="translate(200,245)">
+    
+      <path d="M-18,135 L-35,-20 M-8,135 L-12,-45 M0,135 L0,-55 M8,135 L14,-40 M18,135 L38,-18" stroke="#528243" stroke-width="5" stroke-linecap="round"/>
+      <rect x="-26" y="42" width="52" height="16" rx="4" fill="#F2A8C2"/>
+      
+        <circle cx="-52" cy="-30" r="20" fill="#E33D8B"/>
+        <circle cx="-55" cy="-33" r="9.6" fill="#ffffff" opacity="0.22"/>
+      
+        <circle cx="52" cy="-30" r="20" fill="#F6B93B"/>
+        <circle cx="49" cy="-33" r="9.6" fill="#ffffff" opacity="0.22"/>
+      
+        <circle cx="-30" cy="-62" r="22" fill="#E33D8B"/>
+        <circle cx="-33" cy="-65" r="10.559999999999999" fill="#ffffff" opacity="0.22"/>
+      
+        <circle cx="30" cy="-62" r="22" fill="#F6B93B"/>
+        <circle cx="27" cy="-65" r="10.559999999999999" fill="#ffffff" opacity="0.22"/>
+      
+        <circle cx="0" cy="-82" r="24" fill="#E33D8B"/>
+        <circle cx="-3" cy="-85" r="11.52" fill="#ffffff" opacity="0.22"/>
+      
+        <circle cx="-18" cy="-32" r="22" fill="#F6B93B"/>
+        <circle cx="-21" cy="-35" r="10.559999999999999" fill="#ffffff" opacity="0.22"/>
+      
+        <circle cx="18" cy="-32" r="22" fill="#E33D8B"/>
+        <circle cx="15" cy="-35" r="10.559999999999999" fill="#ffffff" opacity="0.22"/>
+      
+        <circle cx="0" cy="-50" r="24" fill="#F6B93B"/>
+        <circle cx="-3" cy="-53" r="11.52" fill="#ffffff" opacity="0.22"/>
+      
+        <circle cx="-42" cy="-5" r="18" fill="#E33D8B"/>
+        <circle cx="-45" cy="-8" r="8.64" fill="#ffffff" opacity="0.22"/>
+      
+        <circle cx="42" cy="-5" r="18" fill="#F6B93B"/>
+        <circle cx="39" cy="-8" r="8.64" fill="#ffffff" opacity="0.22"/>
+      
+    
+  </g>
+</svg>

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiama - Flower Shop eCommerce</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content="Fiama flower shop eCommerce storefront featuring curated bouquets, seasonal flowers, and gift arrangements." />
+    <meta property="og:title" content="Fiama - Flower Shop eCommerce" />
+    <meta property="og:description" content="Fiama flower shop eCommerce storefront featuring curated bouquets, seasonal flowers, and gift arrangements." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body data-page="home" class="bg-white text-[#666666] antialiased selection:bg-[#E55472] selection:text-white min-h-screen flex flex-col">
+    <div id="site-header"></div>
+
+    <main class="flex-1">
+      <!-- 1. Hero Slider Area (Horizontal full-width slides with background images) -->
+      <section id="hero-section" class="group/hero relative w-full overflow-hidden bg-[#F3EBE7]">
+        <div id="hero-track" class="flex w-full transition-transform duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)] will-change-transform select-none cursor-grab active:cursor-grabbing">
+          <div class="hero-slide slide-active relative w-full shrink-0 bg-[#F3EBE7] bg-cover bg-right md:bg-center min-h-[430px] sm:min-h-[520px] lg:min-h-[600px] xl:min-h-[660px] flex items-center" style="background-image: url('/assets/aistudio/slider-img-1_5c7e2ccf.webp')">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#F3EBE7]/80 via-[#F3EBE7]/35 to-transparent sm:hidden pointer-events-none"></div>
+            <div class="relative z-10 mx-auto w-full max-w-[1170px] px-[15px]">
+              <div class="w-full lg:w-7/12">
+                <div class="slide-item-info max-w-[540px] py-16 md:py-24">
+                  <div class="slide-anim">
+                    <h1 class="text-[32px] sm:text-[46px] md:text-[56px] lg:text-[62px] font-bold leading-[1.15] text-[#3B3C3D]">Fresh Flower</h1>
+                    <h6 class="mt-2 font-[Lora] text-[16px] sm:text-[20px] md:text-[22px] font-normal text-[#565656]">Natural &amp; Beautiful Flower Here</h6>
+                    <div class="w-[70px] h-[2px] bg-[#E55472] mt-4 mb-5"></div>
+                    <p class="text-[13px] sm:text-[14px] leading-[1.8] text-[#555555] max-w-[440px]">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                    </p>
+                    <div class="mt-7">
+                      <a href="/shop-left-sidebar.html" class="inline-block rounded-full bg-[#E55472] hover:bg-[#3B3C3D] px-8 sm:px-9 py-3 sm:py-3.5 text-[13px] sm:text-[14px] font-medium text-white shadow-sm transition-colors duration-300">
+                        Shop Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-slide relative w-full shrink-0 bg-[#F8E2E6] bg-cover bg-right md:bg-center min-h-[430px] sm:min-h-[520px] lg:min-h-[600px] xl:min-h-[660px] flex items-center" style="background-image: url('/assets/aistudio/slider-img-2_f30bea53.webp')">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#F8E2E6]/80 via-[#F8E2E6]/35 to-transparent sm:hidden pointer-events-none"></div>
+            <div class="relative z-10 mx-auto w-full max-w-[1170px] px-[15px]">
+              <div class="w-full lg:w-7/12">
+                <div class="slide-item-info max-w-[540px] py-16 md:py-24">
+                  <div class="slide-anim">
+                    <h1 class="text-[32px] sm:text-[46px] md:text-[56px] lg:text-[62px] font-bold leading-[1.15] text-[#3B3C3D]">Fresh Flower</h1>
+                    <h6 class="mt-2 font-[Lora] text-[16px] sm:text-[20px] md:text-[22px] font-normal text-[#565656]">Natural &amp; Beautiful Flower Here</h6>
+                    <div class="w-[70px] h-[2px] bg-[#E55472] mt-4 mb-5"></div>
+                    <p class="text-[13px] sm:text-[14px] leading-[1.8] text-[#555555] max-w-[440px]">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                    </p>
+                    <div class="mt-7">
+                      <a href="/shop-left-sidebar.html" class="inline-block rounded-full bg-[#E55472] hover:bg-[#3B3C3D] px-8 sm:px-9 py-3 sm:py-3.5 text-[13px] sm:text-[14px] font-medium text-white shadow-sm transition-colors duration-300">
+                        Shop Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="hero-prev" type="button" aria-label="Previous slide" class="hidden md:flex opacity-0 group-hover/hero:opacity-100 absolute left-5 lg:left-8 top-1/2 -translate-y-1/2 z-20 h-11 w-11 items-center justify-center border border-[#D8D0CC] bg-white/75 text-[#565656] hover:bg-[#E55472] hover:border-[#E55472] hover:text-white transition-all duration-300 cursor-pointer">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button id="hero-next" type="button" aria-label="Next slide" class="hidden md:flex opacity-0 group-hover/hero:opacity-100 absolute right-5 lg:right-8 top-1/2 -translate-y-1/2 z-20 h-11 w-11 items-center justify-center border border-[#D8D0CC] bg-white/75 text-[#565656] hover:bg-[#E55472] hover:border-[#E55472] hover:text-white transition-all duration-300 cursor-pointer">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+
+        <div id="hero-dots" class="absolute bottom-5 md:bottom-[72px] left-1/2 -translate-x-1/2 z-20 flex items-center gap-3">
+          <button type="button" data-hero-dot="0" aria-label="Slide 1" class="h-2.5 w-2.5 rounded-full bg-[#E55472] scale-110 transition-all duration-300 cursor-pointer"></button>
+          <button type="button" data-hero-dot="1" aria-label="Slide 2" class="h-2.5 w-2.5 rounded-full bg-[#C8C4C2] hover:bg-[#E55472] transition-all duration-300 cursor-pointer"></button>
+        </div>
+      </section>
+
+      <!-- 2. Feature Bar (stacks cleanly below hero on mobile, overlaps on md+) -->
+      <section class="relative z-20 mx-auto max-w-[1170px] px-[15px] mt-8 md:-mt-[55px]">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-white shadow-[0_5px_24px_rgba(0,0,0,0.06)] border border-[#F0F0F0] divide-y sm:divide-y-0 sm:divide-x divide-[#F0F0F0]">
+          <div class="flex items-center justify-center sm:justify-start gap-4 px-6 py-6 sm:py-7">
+            <img src="/assets/aistudio/feature-icon-trolley_be52ec97.svg" alt="Free shipping" class="h-10 w-10 shrink-0 opacity-75" />
+            <div>
+              <h4 class="text-[14px] font-semibold text-[#010101]">Free shipping</h4>
+              <p class="text-[12px] text-[#777777] mt-0.5">On all orders over $49.00</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center sm:justify-start gap-4 px-6 py-6 sm:py-7">
+            <img src="/assets/aistudio/feature-icon-money_90a8ee5d.svg" alt="15 days returns" class="h-10 w-10 shrink-0 opacity-75" />
+            <div>
+              <h4 class="text-[14px] font-semibold text-[#010101]">15 days returns</h4>
+              <p class="text-[12px] text-[#777777] mt-0.5">Moneyback guarantee</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center sm:justify-start gap-4 px-6 py-6 sm:py-7">
+            <img src="/assets/aistudio/feature-icon-credit-card_35b408df.svg" alt="Secure checkout" class="h-10 w-10 shrink-0 opacity-75" />
+            <div>
+              <h4 class="text-[14px] font-semibold text-[#010101]">Secure checkout</h4>
+              <p class="text-[12px] text-[#777777] mt-0.5">Protected by Paypal</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center sm:justify-start gap-4 px-6 py-6 sm:py-7">
+            <img src="/assets/aistudio/feature-icon-gift-card_a76be623.svg" alt="Offer and gift here" class="h-10 w-10 shrink-0 opacity-75" />
+            <div>
+              <h4 class="text-[14px] font-semibold text-[#010101]">Offer &amp; gift here</h4>
+              <p class="text-[12px] text-[#777777] mt-0.5">On all orders over</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Three Promotional Offer Banners (real images with baked-in typography) -->
+      <section class="mx-auto max-w-[1170px] px-[15px] pt-12 pb-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+          <a href="/shop-left-sidebar.html" class="group relative block overflow-hidden bg-[#F5F5F5]">
+            <img src="/assets/aistudio/promo-banner-1_085be47e.jpg" alt="-30% Offer Happy Flower's Day Only $12" class="w-full h-auto block object-cover transition-transform duration-1000 ease-out group-hover:scale-110" />
+          </a>
+
+          <a href="/shop-left-sidebar.html" class="group relative block overflow-hidden bg-[#F5F5F5]">
+            <img src="/assets/aistudio/promo-banner-2_f0e9a7f4.jpg" alt="Happy Flower's Day 25% Offer" class="w-full h-auto block object-cover transition-transform duration-1000 ease-out group-hover:scale-110" />
+          </a>
+
+          <a href="/shop-left-sidebar.html" class="group relative block overflow-hidden bg-[#F5F5F5]">
+            <img src="/assets/aistudio/promo-banner-3_8302d673.jpg" alt="-40% Offer Happy Flower's Day Only $09" class="w-full h-auto block object-cover transition-transform duration-1000 ease-out group-hover:scale-110" />
+          </a>
+        </div>
+      </section>
+
+      <!-- 4. New Arrival Items -->
+      <section class="mx-auto max-w-[1170px] px-[15px] pb-16">
+        <div class="mb-10 text-center">
+          <h1 class="text-[26px] sm:text-[28px] md:text-[32px] font-bold lowercase text-[#010101]">new arrival items</h1>
+          <div class="mx-auto mt-3 h-[2px] w-16 bg-[#E55472]/70"></div>
+        </div>
+        <div id="new-arrivals-grid" class="grid grid-cols-2 md:grid-cols-4 gap-x-4 sm:gap-x-[30px] gap-y-8 sm:gap-y-10"></div>
+      </section>
+
+      <!-- 5. Two-Column Split Banners -->
+      <section class="mx-auto max-w-[1170px] px-[15px] pb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+          <a href="/shop-left-sidebar.html" class="group relative block overflow-hidden bg-[#F4F4F4]">
+            <img src="/img/banner/6.jpg" alt="Tulip Natural & Beautiful Flower From $12.01" class="w-full h-auto block object-cover transition-transform duration-1000 ease-out group-hover:scale-105" />
+          </a>
+
+          <a href="/shop-left-sidebar.html" class="group relative block overflow-hidden bg-[#F4F4F4]">
+            <img src="/img/banner/7.jpg" alt="Bellflower Natural & Beautiful Flower From $12.01" class="w-full h-auto block object-cover transition-transform duration-1000 ease-out group-hover:scale-105" />
+          </a>
+        </div>
+      </section>
+
+      <!-- 6. Top Products Carousel -->
+      <section class="mx-auto max-w-[1170px] px-[15px] pb-16">
+        <div class="mb-10 text-center">
+          <h1 class="text-[26px] sm:text-[28px] md:text-[32px] font-bold lowercase text-[#010101]">top products</h1>
+          <div class="mx-auto mt-3 h-[2px] w-16 bg-[#E55472]/70"></div>
+        </div>
+        <div class="group/top relative">
+          <div class="overflow-hidden -mx-2 sm:-mx-[15px]">
+            <div id="top-products-track" class="flex transition-transform duration-500 ease-out"></div>
+          </div>
+          <button id="top-products-prev" type="button" aria-label="Previous top products" class="hidden lg:flex opacity-0 group-hover/top:opacity-100 absolute -left-4 top-[38%] -translate-y-1/2 z-20 h-10 w-10 items-center justify-center rounded-full border border-[#EDEDED] bg-white text-[#565656] shadow-md hover:bg-[#E55472] hover:border-[#E55472] hover:text-white transition-all duration-300 cursor-pointer">
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button id="top-products-next" type="button" aria-label="Next top products" class="hidden lg:flex opacity-0 group-hover/top:opacity-100 absolute -right-4 top-[38%] -translate-y-1/2 z-20 h-10 w-10 items-center justify-center rounded-full border border-[#EDEDED] bg-white text-[#565656] shadow-md hover:bg-[#E55472] hover:border-[#E55472] hover:text-white transition-all duration-300 cursor-pointer">
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+          <div id="top-products-dots" class="mt-7 flex items-center justify-center gap-2.5 lg:hidden"></div>
+        </div>
+      </section>
+
+      <!-- 7. Deal of the Day Banner -->
+      <section class="mx-auto max-w-[1170px] px-[15px] pb-16">
+        <a href="/shop-left-sidebar.html" class="group relative block overflow-hidden bg-[#EFEFF1]">
+          <img src="/img/banner/10.jpg" alt="Deal of the day - Shop Your Flower Best Offer $12" class="w-full h-auto block object-cover transition-transform duration-1000 ease-out group-hover:scale-105" />
+        </a>
+      </section>
+
+      <!-- 8. Latest News Carousel -->
+      <section id="latest-news" class="mx-auto max-w-[1170px] px-[15px] pb-20">
+        <div class="mb-10 text-center">
+          <h1 class="text-[26px] sm:text-[28px] md:text-[32px] font-bold lowercase text-[#010101]">latest news</h1>
+          <div class="mx-auto mt-3 h-[2px] w-16 bg-[#E55472]/70"></div>
+        </div>
+        <div class="group/blog relative">
+          <div class="overflow-hidden -mx-2 sm:-mx-[15px]">
+            <div id="latest-news-track" class="flex transition-transform duration-500 ease-out"></div>
+          </div>
+          <button id="blog-prev" type="button" aria-label="Previous news" class="hidden lg:flex opacity-0 group-hover/blog:opacity-100 absolute -left-4 top-[36%] -translate-y-1/2 z-20 h-10 w-10 items-center justify-center rounded-full border border-[#EDEDED] bg-white text-[#565656] shadow-md hover:bg-[#E55472] hover:border-[#E55472] hover:text-white transition-all duration-300 cursor-pointer">
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button id="blog-next" type="button" aria-label="Next news" class="hidden lg:flex opacity-0 group-hover/blog:opacity-100 absolute -right-4 top-[36%] -translate-y-1/2 z-20 h-10 w-10 items-center justify-center rounded-full border border-[#EDEDED] bg-white text-[#565656] shadow-md hover:bg-[#E55472] hover:border-[#E55472] hover:text-white transition-all duration-300 cursor-pointer">
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+          <div id="blog-dots" class="mt-8 flex items-center justify-center gap-2.5 lg:hidden"></div>
+        </div>
+      </section>
+    </main>
+
+    <section id="brand-logos"></section>
+    <div id="site-footer"></div>
+    <div id="site-modals"></div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
